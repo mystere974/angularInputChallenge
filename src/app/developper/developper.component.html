@@ -1,0 +1,16 @@
+<h1>Prez du développeur</h1>
+
+<p>Son Nom: {{model.lastName}}</p>
+<p>Son Prénom: {{model.firstName}}</p>
+<p>Son Age: {{model.age}}</p>
+<p>Sa Bio: {{model.bio}}</p>
+
+<div *ngFor="let comp of model.skills ">
+    <app-skill
+    [competence]="comp">
+    </app-skill>
+</div>
+
+
+
+
